@@ -33,6 +33,21 @@ const filteredUsers = computed(() => {
   </div>
 </template>
 
+<style>
+@media (min-width: 1024px) {
+  body {
+    display: block !important;
+    place-items: unset !important;
+  }
+  #app {
+    display: block !important;
+    grid-template-columns: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+}
+</style>
+
 <style scoped>
 .container {
   max-width: 800px;
