@@ -12,7 +12,7 @@ const users = ref<User[]> ([
 ])
 const searchText = ref('')
 const handleDelete = (id: number) => {
-  users.value = users.value.filter(user => user.id != id)
+  users.value = users.value.filter(user => user.id !== id)
 }
 const filteredUsers = computed(() => {
   if (!searchText.value) return users.value
